@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Local dev overrides (extension ID pinning key, any local-only config)
+# .env.production is tracked and committed — it holds only public config
+# (API URL, Cognito domain, public client ID), no secrets, needed so a plain
+# build works for anyone. .env.development and .env.local stay ignored as a
+# safety default for any local-only additions (e.g. a manually-obtained test
+# token, per M2) even though none are currently stored there.
+# extension-key.pem pins the dev extension ID (M4) — private key, never commit.
+.env
+.env.local
+.env.development
+*.pem
+
+# Playwright verification artifacts (local-only, not source)
+.playwright-profile/
+.playwright-screenshots/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

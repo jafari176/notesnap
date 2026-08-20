@@ -1,0 +1,33 @@
+# Never commit credentials or keys
+access_token.txt
+*.pem
+*.key
+.env
+.env.local
+.env.development
+
+# Node
+node_modules/
+package-lock.json.bak
+
+# Build output
+dist/
+dist-ssr/
+cdk.out/
+*.tsbuildinfo
+
+# Playwright local artifacts
+.playwright-profile/
+.playwright-downloads/
+.playwright-screenshots/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
